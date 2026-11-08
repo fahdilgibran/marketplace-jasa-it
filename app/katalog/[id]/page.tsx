@@ -113,15 +113,12 @@ export default function DetailJasaPage() {
           </div>
 
           <div className="mt-8">
-            <button
-              onClick={() => {
-                // Nanti di W5 akan diarahkan ke order
-                alert("Fitur pesan jasa akan tersedia di minggu berikutnya (W5).");
-              }}
-              className="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 font-medium"
+            <Link
+              href={`/order/${service.id}`}
+              className="block w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 font-medium text-center"
             >
               Pesan Jasa Ini
-            </button>
+            </Link>
           </div>
         </div>
       </div>

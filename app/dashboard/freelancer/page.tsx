@@ -26,7 +26,12 @@ export default function DashboardFreelancer() {
           >
             Kelola Jasa Saya
           </Link>
-
+          <Link
+            href="/dashboard/freelancer/orders"
+            className="block w-full border border-blue-600 text-blue-600 py-2 rounded hover:bg-blue-50"
+          >
+            Pesanan Masuk
+          </Link>
           <button
             onClick={handleLogout}
             className="w-full px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
