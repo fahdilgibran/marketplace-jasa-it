@@ -20,7 +20,8 @@ type Order = {
 };
 
 const statusLabel: Record<string, string> = {
-  pending: "Menunggu",
+  pending: "Menunggu Pembayaran",
+  paid: "Sudah Dibayar",
   accepted: "Diterima",
   rejected: "Ditolak",
   in_progress: "Dikerjakan",
@@ -118,7 +119,7 @@ export default function FreelancerOrdersPage() {
 
                 {/* Tombol aksi berdasarkan status */}
                 <div className="mt-4 flex flex-wrap gap-2">
-                  {order.status === "pending" && (
+                  {order.status === "paid" && (
                     <>
                       <button
                         onClick={() => updateStatus(order.id, "accepted")}
